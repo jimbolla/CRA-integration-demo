@@ -1,7 +1,9 @@
-﻿
-@{
-    ViewBag.Title = "Index";
+﻿@{ ViewBag.Title = "Index"; }
+
+@section head
+{
+  <link href="@ReactApp.AssetManifest["main.css"]" rel="stylesheet">
 }
 
-<h2>Hello</h2>
-<a href="/teams">Teams</a>
+<div id="root"></div>
+<script src="@ReactApp.AssetManifest["main.js"]"></script>
